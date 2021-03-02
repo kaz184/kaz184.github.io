@@ -6,10 +6,12 @@
     "author": "Kaz <k.kazuaki@live.jp>",
     "license": "MIT",
     "devDependencies": {
+        "@vite/vuepress-plugin-mathjax": "^1.1.0",
         "vuepress": "^1.8.2"
     },
     "scripts": {
         "docs:dev": "vuepress dev docs",
         "docs:build": "vuepress build docs"
-    }
+    },
+    "dependencies": {}
 }
