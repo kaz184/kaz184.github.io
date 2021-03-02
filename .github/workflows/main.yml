@@ -27,12 +27,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: install node
-        run: |
-          sudo apt-get install node
-          sudo apt-get install npm
-          sudo npm install -g yarn
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
       - name: build
-        run: yarn docs:build
+        run: npm run docs:build
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
