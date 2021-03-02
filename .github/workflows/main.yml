@@ -31,7 +31,10 @@ jobs:
         with:
           node-version: '10.x'
       - name: build
-        run: npm run docs:build
+        run: |
+          sudo npm install -g yarn
+          yarn install
+          yarn docs:build
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
