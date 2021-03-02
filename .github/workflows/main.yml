@@ -28,8 +28,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: install node
         run: |
-          sudo apt install node
-          sudo apt install npm
+          sudo apt-get install node
+          sudo apt-get install npm
           sudo npm install -g yarn
       - name: build
         run: yarn docs:build
