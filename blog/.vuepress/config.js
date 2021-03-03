@@ -10,7 +10,8 @@ module.exports = {
         ['@vite/vuepress-plugin-mathjax', {}],
         ['@vuepress/search', {
             searchMaxSuggestions: 32
-        }]
+        }],
+        // ['@vuepress/last-updated'],
     ],
     head: [
         ['link', {            
